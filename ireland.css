@@ -1,0 +1,166 @@
+html
+{}
+
+  * {
+      box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: Black;
+  }
+
+
+  .column {
+      float: left;
+      padding: 10px;
+  }
+
+  /* Colonne laterali */
+  .column.side {
+      width: 30%;
+  }
+
+  /* Colonna centrale */
+  .column.middle {
+      width: 40%;
+      align-items: center;
+      margin-top: 50px;
+  }
+
+
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+      .column.side, .column.middle {
+          width: 100%;
+      }
+  }
+
+  /* Footer */
+  .footer {
+      background-color: #f1f1f1;
+      padding: 10px;
+      text-align: right;
+      position: absolute;
+      bottom: 0%;
+      width: 100%;
+
+  }
+
+#footer {
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  font-size: 11px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  float:left;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+
+
+
+h1 {
+  font-size: 150px;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  margin-top: 1%;
+  margin-left: 20%;
+  text-decoration: underline;
+}
+
+h1:hover {
+  color: rgb(92, 145, 0);
+  transition: 0.5s;
+}
+
+h1:visited {
+    color:Black;
+    text-decoration: none;
+}
+
+#Quote {
+  font-family: 'Space Mono', monospace;
+  font-style: italic;
+  font-size: 11px;
+  margin-top: -130px;
+  margin-left: 50%;
+}
+
+#Soon {
+  color: rgb(150, 150, 150);
+}
+
+#Link:hover {
+  transition: 1s;
+  text-transform: uppercase;
+}
+
+#Link:visited{
+  color:Black;
+  text-decoration: none;
+}
+
+img.med {
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.column1, .column2 {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  float:left;
+  margin-top: 20%;
+}
+
+/*SCROLLbar*/
+div.ex1 {
+    background-color: rgb(255,255,255);
+    width: 100%;
+    height: 625px;
+    overflow: scroll;
+    align-items: center;
+}
+
+.hover img {
+  width: 95%;
+  height: auto;
+  filter: grayscale(0);
+}
+
+.hover img:hover {
+  filter: grayscale(100%);
+  transition: 1s;
+}
+
+.hover span{
+  display: none;
+}
+
+.hover:hover span {
+  display: block;
+  font-family: 'Space Mono', monospace;
+  font-weight: bolder;
+  font-size: 11px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  margin-top: 0px;
+}

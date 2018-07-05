@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="ppl.css" type="text/css" rel="stylesheet" />
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" ></script>
+
+</head>
+<body>
+
+  <div class="row">
+    <div class="column side">
+      <a href="index.html"> <h1> PPL </h1> </a>
+      <p id="Quote"> Persone dal mondo </p>
+
+    </div>
+
+
+    <div class="column middle">
+
+      <div class="column1">
+            <ul>
+              <a href="index.html"> <li> <div id="Link"> home </div> </li> </a>
+              <a href="about.html"> <li> <div id="Link"> about </div> </li> </a>
+              <p> </p>
+              <p> </p>
+              <li> soon: <div id="Soon"> Amsterdam, Paesi Bassi </div> </li>
+            </ul>
+      </div>
+      <div class="column2">
+            <ul>
+              <li> <a href="france.html"> <div id="Link"> Francia </div> </a> </li>
+              <li> <a href="ireland.html"> <div id="Link"> Irlanda </div> </a> </li>
+              <li> <a href="italy.html"> <div id="Link"> Italia </div> </a> </li>
+              <li> <a href="maldives.html"> <div id="Link"> Maldive </div> </a> </li>
+              <li> <a href="norway.html"> <div id="Link"> Norvegia </div> </a> </li>
+            </ul>
+      </div>
+
+
+    </div>
+
+
+
+    <div class="column side">
+
+
+
+      <div id="background"></div>
+       <script type="text/javascript">
+        $(function() {
+         var images = ['France2.jpg', 'France3.jpg', 'France6.jpg', 'Irelanddub2.jpg', 'Irelandgalwaym.jpg', 'Irelandinishmor.jpg', 'Irelandmati.jpg', 'Italy3.jpg', 'Italy4.jpg', 'Italy9.jpg', 'Italy12.jpg', 'Italy16.jpg', 'Maldives2.jpg', 'Maldives1.jpg', 'Norway1.jpg', 'Norway2.jpg', 'Norway3_5.jpg', 'Norway4.jpg', 'Italy15.jpg' ];
+         $('#background').css({'background-image': 'url(' + images[Math.floor(Math.random() * images.length)] + ')'});
+        });
+       </script>
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+  <div class="footer">
+  <p id="footer">
+    <a href="about.html"> Dove vorresti andare? </a>
+    </div>
+  </p>
+</div>
+
+
+
+
+</body>
+</html>

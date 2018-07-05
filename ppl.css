@@ -1,0 +1,143 @@
+html
+{}
+
+  * {
+      box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: Black;
+  }
+
+
+  /* Create three unequal columns that floats next to each other */
+  .column {
+      float: left;
+      padding: 10px;
+  }
+
+  /* Left and right column */
+  .column.side {
+      width: 30%;
+  }
+
+  /* Middle column */
+  .column.middle {
+      width: 40%;
+      align-items: center;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+      .column.side, .column.middle {
+          width: 100%;
+      }
+  }
+
+  /* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 40px;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+
+}
+
+#footer {
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  font-size: 11px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+
+
+
+h1 {
+  font-size: 150px;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  margin-top: 50%;
+  margin-left: 20%;
+  text-decoration: underline;
+}
+
+h1:hover {
+  color: rgb(102, 205, 170);
+  transition: 0.5s;
+}
+
+h1:visited {
+    color:Black;
+    text-decoration: none;
+}
+
+#Quote {
+  font-family: 'Space Mono', monospace;
+  font-style: italic;
+  font-size: 11px;
+  margin-top: -130px;
+  margin-left: 50%;
+}
+
+#Soon {
+  color: rgb(102, 205, 170);
+}
+
+#Link:hover {
+  transition: 1s;
+  text-transform: uppercase;
+}
+
+#Link:visited{
+  color:Black;
+  text-decoration: none;
+}
+
+img.med {
+  width: 80%;
+  height: auto;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.column1, .column2 {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  float:left;
+  margin-top: 50%;
+}
+
+
+#background {
+ position:fixed;
+ left: 65%;
+ top: 25%;
+ background-size:30%;
+ background-repeat: no-repeat;
+ width:100%;
+ height:100%;
+ z-index:999;
+ }
